@@ -62,6 +62,7 @@ var heroes=[];
         heroes.push(characters.name);
         $('#heroes').append(hero);
     }
-
+//create a function that once a character is chosen the rest are considered enemies.
+//created a lot of rough drafts trying to figure out what to do, to little to late with how fast the course is going but I'll finish this!
 
 
