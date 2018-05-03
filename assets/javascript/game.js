@@ -1,69 +1,53 @@
 $function()
-//The Fellowship
-//Gimli Object
 
 
-//Legolas Object
+
+
+//objects
 
 var Shelob ={
     name: "Shelob",
     health: 200,
     attack: 7,
+    image:"./assets/images/Shelob.png",
 }
-//Aragorn Object
+
 var Aragorn ={
     name: "Aragorn",
     health: 100,
     attack: 10,
-
+    image:"./assets/images/Aragorn.jpg",
 }
 
-// Shelob Object
+
 var Gollum ={
     name:"Gollum",
     health:100,
     attack:4,
+    image= "./assets/images/Gollum.jpg",
 }
-//Sauron Object
+
 var Sauron ={
     name:"Sauron",
     health:500,
     attack:20,
+    image="./assets/images/Gollum.jpg",
 }
 
-//Variables
-var AllyChoice =[gimli, Legolas, Aragorn, Frodo];
-var EnemyChoice =[Saruman, Shelob, Sauron];
-var $playerChoice;
-var $enemyChoice;
-//Health and Attack
-var myhealth;
-var myattack;
+//set variables
+var characters=["Aragorn, Shelob, Gollum, Sauron"];
+var gameRunning= false;
+var userHp;
+var newHp;
+var enemyHp;
+var newEnHp;
 
-var EnenyActive= false;
-
-
-function Start() {
-    //insert Audio
-
-    
+function Creation(){
+    if  (charcters.length === 5){
+        
+    }
 }
 
-
-function charactercreation(char, key){
-var charDiv = $("<div class='character' data-name =' " + key + "'>")
-var charName = $("<div class='character-name'>").text(character.name)
-var charImage = $("<img alt='image' class='character-image'>").attr('src', character.imageURL)
-var charHealth = $("<div class='character-health'>").text(character.heatlth)
-charDiv.append(charName).append(charImage).append(charHealth)
-return CharDiv
-}
-
-
-
-function ChooseCharacter(){
-
-}
     
 
 
