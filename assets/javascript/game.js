@@ -42,11 +42,7 @@ var newHp;
 var enemyHp;
 var newEnHp;
 
-function Creation(){
-    if  (charcters.length === 5){
-        
-    }
-}
+// Change Html file, to more basic, will append things where needed, that was the point of this excercise, compeletely misunderstood Will continue at 3:30 am.//
 
     
 
