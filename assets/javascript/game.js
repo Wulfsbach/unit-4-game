@@ -41,7 +41,7 @@ var userHp;
 var newHp;
 var enemyHp;
 var newEnHp;
-heroes=[];
+var heroes=[];
 
 // Change Html file, to more basic, will append things where needed, that was the point of this excercise, compeletely misunderstood Will continue at 3:30 am.//
 // Working it out.
@@ -49,15 +49,15 @@ heroes=[];
 //Pseudo-code: Create divs related to each character and append them to the html file.
 
 
-
+//Not really working but I get the idea of it need to hash it out some more. Might have to do with my HTML Setup, will work on it.
     for (var i=0; i<characters.length;i++ ){
-        var hero= $("<div>");
-        hero.append('<div class="HeroName" >' + characters[i].name);
-        hero.append(characters[i].image);
-        hero.append('<div class="Health">'+ characters[i].health);
-        hero.attr('data-name', characters[i].name);
-        hero.attr('data-attack',characters[i].name);
-        hero.attr('data-health',characters[i].health);
+        var $hero= $("<div id= 'characters.length[i].name'>");
+        $hero.append('<div class="Character-Region" >' + characters[i].name);
+        $hero.append(characters[i].image);
+        $hero.append('<div class="Health">'+ characters[i].health);
+        $hero.attr('data-name', characters[i].name);
+        $hero.attr('data-attack',characters[i].name);
+        $hero.attr('data-health',characters[i].health);
 
         heroes.push(characters.name);
         $('#heroes').append(hero);
